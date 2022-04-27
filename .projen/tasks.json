@@ -43,7 +43,30 @@
     },
     "bundle": {
       "name": "bundle",
-      "description": "Prepare assets"
+      "description": "Prepare assets",
+      "steps": [
+        {
+          "spawn": "bundle:hello-world.lambda"
+        }
+      ]
+    },
+    "bundle:hello-world.lambda": {
+      "name": "bundle:hello-world.lambda",
+      "description": "Create a JavaScript bundle from src/hello-world.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/hello-world.lambda.ts --target=\"node14\" --platform=\"node\" --outfile=\"assets/hello-world.lambda/index.js\" --external:aws-sdk"
+        }
+      ]
+    },
+    "bundle:hello-world.lambda:watch": {
+      "name": "bundle:hello-world.lambda:watch",
+      "description": "Continuously update the JavaScript bundle from src/hello-world.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/hello-world.lambda.ts --target=\"node14\" --platform=\"node\" --outfile=\"assets/hello-world.lambda/index.js\" --external:aws-sdk --watch"
+        }
+      ]
     },
     "clobber": {
       "name": "clobber",

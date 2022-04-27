@@ -1,8 +1,8 @@
 const { AwsCdkTypeScriptApp } = require("@pepperize/projen-awscdk-app-ts");
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: "2.1.0",
+  cdkVersion: "2.21.1",
   defaultReleaseBranch: "main",
-  devDeps: ["@pepperize/projen-awscdk-app-ts"],
+  devDeps: ["@pepperize/projen-awscdk-app-ts", "aws-sdk", "@types/aws-lambda"],
   name: "cdk-metrics-example",
 
   // deps: [],                /* Runtime dependencies of this module. */

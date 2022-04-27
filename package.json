@@ -4,6 +4,8 @@
     "build": "npx projen build",
     "bump": "npx projen bump",
     "bundle": "npx projen bundle",
+    "bundle:hello-world.lambda": "npx projen bundle:hello-world.lambda",
+    "bundle:hello-world.lambda:watch": "npx projen bundle:hello-world.lambda:watch",
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
     "default": "npx projen default",
@@ -34,11 +36,13 @@
   },
   "devDependencies": {
     "@pepperize/projen-awscdk-app-ts": "^0.0.102",
+    "@types/aws-lambda": "^8.10.95",
     "@types/jest": "^27.4.1",
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk": "^2.1.0",
+    "aws-cdk": "^2.21.1",
+    "aws-sdk": "^2.1122.0",
     "esbuild": "^0.14.38",
     "eslint": "^8",
     "eslint-config-prettier": "^8.5.0",
@@ -46,7 +50,7 @@
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^28.0.2",
+    "jest": "^27.4.1",
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
     "prettier": "^2.6.2",
@@ -57,7 +61,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.21.1",
     "constructs": "^10.0.5"
   },
   "license": "MIT",
