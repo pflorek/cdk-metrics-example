@@ -1005,9 +1005,9 @@ aws-cdk-lib@^2.21.1:
     yaml "1.10.2"
 
 aws-cdk@^2.21.1:
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.21.1.tgz#d727c16fb6a070a717d7b87ee620783bb329d8c0"
-  integrity sha512-+pFRv6WVes5uza+3ISyqMzrJitki9f8Zr2K/S3SzhXYho9jsTFpOnndws3osu0vUZyhw08VzKiKjcrUpQyqpRQ==
+  version "2.61.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.61.1.tgz#a70451a89ca3bdcb83a58c7c0e37e47845cb9cf4"
+  integrity sha512-bufvOB+I2T6YjVjT6D0j6xbi6CnX62j7TfHL905WLd5UQhPecwlL8wLe2whUOKqZj2wmGjaP7jAjIE1FFfh98w==
   optionalDependencies:
     fsevents "2.3.2"
 
